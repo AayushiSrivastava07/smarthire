@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import DashboardLayout from './layouts/DashboardLayout'
 import Landing from './pages/Landing'
 import Login from './pages/Login'
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/jobs" element={<Jobs />} />
@@ -31,3 +33,4 @@ function App() {
 }
 
 export default App
+
